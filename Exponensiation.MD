@@ -1,4 +1,4 @@
-# Some Useful code I use in competitve programming
+# Different type of Exponensiation used in competitve programmin
 
 ## Binary Exponensiation
 
