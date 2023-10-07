@@ -36,16 +36,13 @@ There should be an array named **tree[N*4]**
 ## Segment Tree Query
 
 ```cpp
-  void update_tree(int node, vector<int> &v, int rengeLeft, int rengeRight, int point, int value){
-    if(rengeLeft == point && rengeRight == point){
-      tree[node] = value;
-      return;
+  ll query(int node, vector<int> &v, int rengeLeft, int rengeRight, int queryLeft, int queryRight){
+    if(queryLeft <= rengeLeft && queryRight >= rengeRight){
+      return tree[node];
     }
-    else if(rengeLeft > point || rengeRight < point) return;
+    else if(queryLeft>rengeRight || queryRight < rengeLeft) return 0;
     int rengeMid = (rengeLeft+rengeRight)/2;
     int leftNode = node*2, rightNode = leftNode+1;
-    update_tree(leftNode,v,rengeLeft,rengeMid,point,value);
-    update_tree(rightNode,v,rengeMid+1,rengeRight,point,value);
-    tree[node] = tree[leftNode]+tree[rightNode];
-  }
+    return query(leftNode,v,rengeLeft,rengeMid,queryLeft,queryRight)+query(rightNode,v,rengeMid+1,rengeRight,queryLeft,queryRight);
+  }  
 ```
