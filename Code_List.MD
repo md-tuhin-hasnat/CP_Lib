@@ -26,3 +26,7 @@ ll mod_exp(ll x,ll y,ll mod){
   return ans;
 }
 ```
+We can find inverse modulo of a number **a** using **Modular Exponensiation** if the modulo is a **prime number**,
+$$
+  a^(p-2) = a^(-1) + p
+$$
