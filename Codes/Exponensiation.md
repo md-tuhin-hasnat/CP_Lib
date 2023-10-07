@@ -1,4 +1,4 @@
-# Different type of Exponensiation used in competitve programmin
+# Different type of Exponensiation used in competitve programming
 
 ## Binary Exponensiation
 
