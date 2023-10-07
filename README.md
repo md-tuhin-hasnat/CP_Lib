@@ -2,4 +2,4 @@
 
 | Algorithm Name | Link |
 |----------------|------|
-|Exponensiation|[https://github.com/md-tuhin-hasnat/CP_Lib/blob/main/Code_List.MD](https://github.com/md-tuhin-hasnat/CP_Lib/blob/main/Code_List.MD)|
+|Exponensiation|[https://github.com/md-tuhin-hasnat/CP_Lib/blob/main/Exponensiation.MD](https://github.com/md-tuhin-hasnat/CP_Lib/blob/main/Exponensiation.MD)|
