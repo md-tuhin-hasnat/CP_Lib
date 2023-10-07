@@ -32,5 +32,5 @@ a^{p-2} = a^{-1}&nbsp{mod}&nbsp{p}
 }$$
 To find the above expression, we can simply use,
 ```c++
-ll invers_modulo_of_a = mod_exp(a,mod-2,mod);
+long long invers_modulo_of_a = mod_exp(a,mod-2,mod);
 ```
