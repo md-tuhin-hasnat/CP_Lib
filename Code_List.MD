@@ -30,3 +30,7 @@ We can find inverse modulo of a number **a** using **Modular Exponensiation** if
 $${
 a^{p-2} = a^{-1}&nbsp{mod}&nbsp{p}
 }$$
+To find the above expression, we can simply use,
+```c++
+ll invers_modulo_of_a = mod_exp(a,mod-2,mod);
+```
